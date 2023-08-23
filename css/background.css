@@ -3,8 +3,7 @@
     position: fixed;
     
     background-image: var(--gradient);
-    opacity: 1;
-    mix-blend-mode:color-dodge;
+    opacity: .1;
     
     inset: 0;
     left: -50%;
