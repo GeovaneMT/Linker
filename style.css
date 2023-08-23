@@ -107,9 +107,9 @@ iframe:not(.show),
 
 iframe.show {
   position: fixed;
-  transform: translateX(10%);
-  max-height: 10vh;
-  max-width: 50vw;
+  transform: translateX(-12%);
+  max-height: 20vh;
+  max-width: 80vw;
   border-radius: 8px;
   transition: all 0.3s ease-in-out ;
   z-index: 1;
