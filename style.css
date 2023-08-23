@@ -1,6 +1,7 @@
 @import url(./css/config.css);
 @import url(./css/animations.css);
 @import url(./css/background.css);
+@import url(./css/glow.css);
 
 .content {
   display: grid;
@@ -13,21 +14,25 @@
   min-height: 100vh;
 
   padding: 10vw;
-
 }
 
-.overlay{
+.overlay {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(to bottom, var(--bgColor), hsla(0, 0%, 0%, 0.1), var(--bgColor)95%);
+  background: linear-gradient(
+    to bottom,
+    var(--bgColor),
+    hsla(0, 0%, 0%, 0.1),
+    var(--bgColor) 95%);
+    
 }
 
 .profile-pic {
   width: 50vw;
   max-width: 20rem;
-  border-radius: 50%;
-  box-shadow: var(--boxShadow);
+  border-radius: 50%; 
+  box-shadow: var(--boxShadow); 
 }
 
 .username {
@@ -38,7 +43,7 @@
 
   border-radius: 5rem;
   padding: 2rem;
-  
+
   font-size: 2rem;
 
   background: var(--bgColor);
@@ -63,13 +68,14 @@
   color: var(--bgColor);
 
   border-radius: 24px;
-  
+
   gap: 2rem;
-  
+
   box-shadow: var(--boxShadow);
-  
+
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
+  transition: all 0.3s ease-in-out;
 }
 
 .link-items:hover {
@@ -99,19 +105,21 @@ span {
 iframe:not(.show),
 #overlay:not(.show) {
   position: fixed;
+  top: 45%;
   max-height: 0;
   max-width: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out ;
+  transition: all 0.3s ease-in-out;
 }
 
 iframe.show {
   position: fixed;
+  top: 45%;
   transform: translateX(-12%);
   max-height: 20vh;
   max-width: 80vw;
   border-radius: 8px;
-  transition: all 0.3s ease-in-out ;
+  transition: all 0.3s ease-in-out;
   z-index: 1;
 }
 
@@ -122,7 +130,7 @@ iframe.show {
   inset: 0;
   transition: all 0.3s ease-in-out;
   background: var(--bgColor);
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #thumb {

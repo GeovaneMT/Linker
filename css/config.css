@@ -18,20 +18,19 @@
   }
   
   :root {
-    
-    --bg2: hsla(200, 7%, 9%, .5);
-    --bgColor: hsla(200, 7%, 9%, 1);
+    --bg2: hsla(200, 7%, 9%, .5);
+    --bgColor: hsla(200, 7%, 9%, 1);
     --boxShadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     --ciano: hsla(184, 100%, 49%, 1);
     --hover: hsla(124, 91%, 74%, 1);
     
-    --gradient: linear-gradient(-60deg, var(--white) 50%, var(--grey) 50%);
+    --gradient: linear-gradient(-60deg, var(
+    --white) 50%, var(--grey) 50%);
   
     --grey: hsla(210, 5%, 16%, 1);
     --white: hsla(220, 23%, 97%, 1);
-
-    font-size: clamp(40%, 1% + 2vw, 62.5%);
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
   }
   
   html {
