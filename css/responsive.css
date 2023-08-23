@@ -1,8 +1,19 @@
-@media (min-width: 1024px) {
+@media (min-width: 500px) {
 
-.links {
-  display: grid;
-  grid-template-columns: 1fr  1fr;
-  margin-top: 4rem;
-}
+  .links {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    margin-top: 4rem;
+  }
+
+  iframe.show {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+
+  #video {
+  width: 60vw;
+  min-width: 38rem;
+  }
+
 }

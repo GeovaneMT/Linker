@@ -3,10 +3,11 @@
   flex-direction: column;
   gap: 4rem;
   width: 60vw;
-  max-width: 30rem;
+  justify-content: center;
 }
 
 .link-items {
+  height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
