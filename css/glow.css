@@ -1,32 +1,40 @@
-.card {
-  background: #191c29;
-  padding: 3px;
+.card,
+.card2 {
+  background: var(--bgColor);
   position: relative;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  text-align: center;
   display: flex;
-  font-size: 1.5em;
-  color: rgb(88 199 250 / 0%);
-  cursor: pointer;
-  font-family: cursive;
+}
+.card2 {
+  border-radius: 5rem;
+  color: var(--white);
 }
 
-.card::before {
+.card::before,
+.card2::before {
   content: "";
   width: 104%;
-  height: 102%;
+  height: 104%;
   border-radius: 50%;
-  background-image: linear-gradient(var(--rotate), #3c67e3, #23a6d5 43%, #5ddcff);
-    position: absolute;
-    z-index: -1;
-    top: -1%;
-    left: -2%;
-    animation: spin 2.5s linear infinite;
+  background-image: linear-gradient(var(--rotate), var(--rotGradient));
+  position: absolute;
+  z-index: -1;
+  top: -1;
+  left: -1;
+  animation: spin 2.5s linear infinite;
+}
+.card2::before {
+  width: 102%;
+  height: 107%;
+  border-radius: 5rem;
+  top: -3%;
+  left: -1%;
 }
 
-.card::after {
+.card::after,
+.card2::after {
   position: absolute;
   content: "";
   top: calc(var(--card-height) / 10);
@@ -38,8 +46,8 @@
   margin: 0 auto;
   transform: scale(0.6);
   filter: blur(calc(var(--card-height) / 6));
-  background-image: linear-gradient(var(--rotate), #3c67e3, #23a6d5 43%, #5ddcff);
-    opacity: 1;
-  transition: opacity .5s;
+  background-image: linear-gradient(var(--rotate), var(--rotGradient));
+  opacity: 1;
+  transition: opacity 0.5s;
   animation: spin 2.5s linear infinite;
 }

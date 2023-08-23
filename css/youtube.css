@@ -1,0 +1,42 @@
+iframe:not(.show),
+#overlay:not(.show) {
+  position: fixed;
+  top: 45%;
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+iframe.show {
+  position: fixed;
+  top: 45%;
+  transform: translateX(-12%);
+  max-height: 20vh;
+  max-width: 80vw;
+  border-radius: 8px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+#overlay.show {
+  position: fixed;
+  place-content: center;
+  height: 100%;
+  inset: 0;
+  background: var(--bgColor);
+  opacity: 0.5;
+}
+
+#thumb {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#video {
+  z-index: 1;
+}

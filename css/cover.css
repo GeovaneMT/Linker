@@ -1,0 +1,69 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    var(--bgColor),
+    hsla(0, 0%, 0%, 0.1),
+     var(--bgColor) 95%);    
+}
+
+.profile {
+  height: 100vh;
+}
+
+.content {
+  display: grid;
+  place-content: center;
+  gap: 4rem;
+  height: 100vh;
+  padding: 10vw;
+  justify-items: center;
+}
+
+.profile-pic {
+  width: 50vw;
+  max-width: 20rem;
+  border-radius: 50%; 
+  box-shadow: var(--boxShadow); 
+}
+
+.username {
+  width: 60vw;
+  max-width: 30rem;
+
+  text-align: center;
+
+  border-radius: 5rem;
+  padding: 2rem;
+
+  font-size: 2rem;
+
+  background: var(--bgColor);
+  text-shadow: var(--boxShadow);
+  box-shadow: var(--boxShadow);
+}
+
+span {
+  display: flex;
+  width: 60vw;
+  max-width: 30rem;
+
+  padding: 1rem 2rem;
+  box-shadow: var(--boxShadow);
+ 
+  background: var(--bgColor);
+  background-size: 400% 400%;
+  border-radius: 5rem;
+
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+#roll {
+  position: absolute;
+  bottom: 15%;
+  transform: scale(5);
+  color: var(--ciano);
+}
