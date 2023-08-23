@@ -1,0 +1,25 @@
+.bg {
+  
+    position: fixed;
+    
+    background-image: var(--gradient);
+    opacity: 1;
+    mix-blend-mode:color-dodge;
+    
+    inset: 0;
+    left: -50%;
+    right: -50%;
+    
+    z-index: -1;
+  
+    animation: slide 3s ease-in-out infinite alternate;
+  }
+  
+  .bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+  }
+  
+  .bg3 {
+    animation-duration: 5s;
+  }

@@ -1,0 +1,141 @@
+@import url(./css/config.css);
+@import url(./css/animations.css);
+@import url(./css/background.css);
+
+.content {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+
+  gap: 4rem;
+
+  width: 100vw;
+  min-height: 100vh;
+
+  padding: 10vw;
+
+}
+
+.overlay{
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom, var(--bgColor), hsla(0, 0%, 0%, 0.1), var(--bgColor)95%);
+}
+
+.profile-pic {
+  width: 50vw;
+  max-width: 20rem;
+  border-radius: 50%;
+  box-shadow: var(--boxShadow);
+}
+
+.username {
+  width: 60vw;
+  max-width: 30rem;
+
+  text-align: center;
+
+  border-radius: 5rem;
+  padding: 2rem;
+  
+  font-size: 2rem;
+
+  background: var(--bgColor);
+  text-shadow: var(--boxShadow);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 60vw;
+}
+
+.link-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+
+  font-size: 1.7rem;
+  color: var(--bgColor);
+
+  border-radius: 24px;
+  
+  gap: 2rem;
+  
+  box-shadow: var(--boxShadow);
+  
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+}
+
+.link-items:hover {
+  transform: scale(1.1);
+}
+
+p {
+  text-align: center;
+}
+
+span {
+  display: flex;
+  width: 60vw;
+  max-width: 30rem;
+
+  padding: 1rem 2rem;
+  box-shadow: var(--boxShadow);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  border-radius: 5rem;
+
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: var(--bgColor);
+}
+
+iframe:not(.show),
+#overlay:not(.show) {
+  position: fixed;
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out ;
+}
+
+iframe.show {
+  position: fixed;
+  transform: translateX(10%);
+  max-height: 10vh;
+  max-width: 50vw;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out ;
+  z-index: 1;
+}
+
+#overlay.show {
+  position: fixed;
+  place-content: center;
+  height: 100%;
+  inset: 0;
+  transition: all 0.3s ease-in-out;
+  background: var(--bgColor);
+  opacity: .5;
+}
+
+#thumb {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#video {
+  z-index: 1;
+}
+
+.colored {
+  
+}
