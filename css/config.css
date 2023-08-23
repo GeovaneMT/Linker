@@ -28,6 +28,8 @@
     --ciano: hsla(184, 100%, 49%, 1);
     --hover: hsla(124, 91%, 74%, 1);
     
+    --gradientbg: linear-gradient(-60deg, var(--white) 50%, var(--grey) 50%);
+
     --gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   
     --grey: hsla(210, 5%, 16%, 1);

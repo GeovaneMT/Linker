@@ -2,7 +2,7 @@
   
     position: fixed;
     
-    background-image: var(--gradient);
+    background-image: var(--gradientbg);
     opacity: .1;
     
     inset: 0;
