@@ -17,7 +17,7 @@
   display: grid;
   place-content: center;
   gap: 4rem;
-  height: 100vh;
+  min-height: 100vh;
   padding: 10vw;
   justify-items: center;
 }
@@ -62,8 +62,7 @@ span {
 }
 
 #roll {
-  position: absolute;
-  bottom: 15%;
+  margin-top: 4rem;
   transform: scale(5);
   color: var(--ciano);
 }

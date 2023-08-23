@@ -3,24 +3,19 @@
   flex-direction: column;
   gap: 4rem;
   width: 60vw;
+  max-width: 30rem;
 }
 
 .link-items {
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding: 2rem;
-
   font-size: 1.7rem;
   color: var(--bgColor);
-
   border-radius: 24px;
-
   gap: 2rem;
-
   box-shadow: var(--boxShadow);
-
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   transition: all 0.3s ease-in-out;
