@@ -6,7 +6,8 @@
     to bottom,
     var(--bgColor),
     hsla(0, 0%, 0%, 0.1),
-     var(--bgColor) 95%);    
+    var(--bgColor) 95%
+  );
 }
 
 .profile {
@@ -18,15 +19,14 @@
   place-content: center;
   gap: 4rem;
   min-height: 100vh;
-  padding: 0 10vw 10vw 10vw;
   justify-items: center;
 }
 
 .profile-pic {
   width: 50vw;
   max-width: 20rem;
-  border-radius: 50%; 
-  box-shadow: var(--boxShadow); 
+  border-radius: 50%;
+  box-shadow: var(--boxShadow);
 }
 
 .username {
@@ -41,9 +41,10 @@
 
   font-size: 2rem;
 
-  background: var(--bgColor);
-  text-shadow: var(--boxShadow);
-  box-shadow: var(--boxShadow);
+  background: var(--bgColor) !important;
+  text-shadow: var(--boxShadow) !important;
+  box-shadow: var(--boxShadow) !important;
+  color: var(--white) !important;
 }
 
 span {
@@ -54,7 +55,7 @@ span {
 
   padding: 1rem 2rem;
   box-shadow: var(--boxShadow);
- 
+
   background: var(--bgColor);
   background-size: 400% 400%;
   border-radius: 5rem;
