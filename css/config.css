@@ -73,7 +73,7 @@
   height: 1.2rem;
   
   background: var(--scrollbarGradient);
-  border: .5rem solid var(--black);
+  border: .5rem solid var(--bgColor);
 }
 
 ::-webkit-scrollbar-thumb {
